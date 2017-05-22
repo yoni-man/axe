@@ -47,8 +47,7 @@ public class UI extends javax.swing.JFrame {
          
         char [] fidel=text.toCharArray();
              
-   Thread t;
-           t = new Thread() {
+   Thread t = new Thread() {
             
             @Override
             
@@ -1789,12 +1788,12 @@ public class UI extends javax.swing.JFrame {
       
        for(char c:text ){
        SoundNarrator.playFidel(Character.toString(c));
-       try{
-           Thread.sleep(2000);
-                   }catch(InterruptedException e){}
-       
-       }
-       
+//       try{
+//           Thread.sleep(2000);
+//                   }catch(InterruptedException e){}
+//       
+//       }
+//       
        }
        else{
        SoundNarrator.playFidel(b9.getText());
